@@ -1,0 +1,12 @@
+body {
+    background-color: #00ff00
+}
+ 
+.container {
+    width: 90%;
+    text-align: center;
+}
+ 
+.first-sentence {
+    font-weight: bold;
+}
