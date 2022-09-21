@@ -5,7 +5,7 @@ body{
 
 header{
     width: 700px;
-    height: 300px;
+    height: 300 px;
     background-color: rgb(52, 120, 157);
     padding: 10px;
     border-radius: 5px;
@@ -21,7 +21,7 @@ h1{
     font-size: 30px;
 }
 
-hearder h1{
+header h1{
     float: right;
 }
 
