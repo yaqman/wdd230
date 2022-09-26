@@ -9,6 +9,9 @@ header{
     background-color: rgb(52, 120, 157);
     padding: 10px;
     border-radius: 5px;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
 }
 
 img{
@@ -22,7 +25,7 @@ h1{
 }
 
 header h1{
-    float: right;
+    float: right; 
 }
 
 ul{
