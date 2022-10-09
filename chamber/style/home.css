@@ -1,0 +1,145 @@
+
+header {
+    display: grid;
+    grid-template-columns: 20% 50% 10% 20%;
+    grid-template-rows: 80% 20%;
+    background-color: #5682b4;
+    color: white;
+    font-family: "Josefin Bold";
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+header h1, header h2 {
+    text-transform: uppercase;
+    padding: 0px 30px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 10px;
+}
+
+#logo {
+    width: 75px;
+}
+
+#facebook, #instagram {
+    width: 20px;
+    grid-column-start: 4;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #4169e1;
+	font-family: "Montserrat Medium";
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a.ham::before {
+	content: "☰";
+    font-size: 45px;
+}
+
+.navigation a:hover {
+	color: #4169e1;
+}
+
+.responsive li {
+	display: block;
+}
+
+.responsive a.ham::before {
+	content: "";
+}
+
+#currentDate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: #5682b4;
+    font-family: "Montserrat Medium";
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+p {
+    font-family: "Montserrat Medium";
+    font-size: 10px;
+}
+
+main{
+    display: grid;
+    grid-auto-rows: minmax(200px, auto);
+}
+
+.item1, .item2, .item3, .item4, .item6, .item7, .item8 {
+    background-color: #5682b4;
+    color: #f0f8ff;
+    padding: 20px;
+    margin: 15px 20px;
+    border: solid #4169e1;
+}
+
+.item5 {
+    display: none;
+}
+
+.item9 {
+    display: none;
+}
+
+footer {
+    justify-content: center;
+    background-color: #5682b4;
+    color: white;
+    font-family: "Josefin Bold";
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+#logo2 {
+    width: 100px;
+    padding: 20px 100px;
+}
+
+#stripedBorder {
+    border: 1px dashed white; 
+    width: 50%; 
+    margin: auto; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+#lastUpdated {
+    background-color: #5682b4;
+}
