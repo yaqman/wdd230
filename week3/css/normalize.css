@@ -1,0 +1,35 @@
+body{
+    width: 700px;
+    margin: 50px 50px;
+}
+
+header{
+    width: 700px;
+    height: 300 px;
+    background-color: rgb(52, 120, 157);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+img{
+    padding-left: 30px;
+    width: 130px;
+    height: 160px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+header h1{
+    float: right; 
+}
+
+ul{
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+    padding: 10px 30px;
+}

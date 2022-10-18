@@ -1,0 +1,116 @@
+h1,
+h2 {
+  font-family: 'Roboto Serif', serif;
+  font-family: 'Source Serif 4', serif;
+}
+
+h3,
+h4,
+p {
+  font-family: 'Roboto Serif', serif;
+  font-family: 'Source Serif 4', serif;
+}
+
+body {
+  background-color: #f0f8ff;
+}
+
+header,
+footer {
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #4169e1;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: grid;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  text-align: center;
+  background-color: #5682b4;
+  border-radius: 1em;
+}
+
+h2 {
+  padding: 0.25em;
+  background-color: #4169e1;
+  margin-top: 0;
+  border-top-right-radius: 0.6em;
+  border-top-left-radius: 0.6em;
+}
+
+img {
+  max-width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+p {
+  padding: 1em;
+  text-align: justify;
+}
+
+table{
+  align-self: center;
+  width: 40%;
+  text-align: center;
+  border: 1px solid;
+}
+
+table, th, td{
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.centertext {
+  text-align: center;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  background-color: #5682b4;
+}
+
+a {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content;
+  padding: 2.5px;
+}
+
+.primary {
+  background-color: #87cefa;
+}
+
+.secondary{
+  background-color: #4169e1;
+}
+
+.accent1{
+  background-color: #5682b4;
+}
+
+.accent2 {
+  background-color: #f0f8ff;
+}
