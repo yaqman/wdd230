@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style\home.css">
     <link rel="stylesheet" href="style\medium.css">
     <link rel="stylesheet" href="style\large.css">
+    <script src="script\windchill.js" defer></script>
     <script src="script\data.js" defer></script>
 </head>
 
@@ -19,13 +20,13 @@
     <header>
         <div id="currentDate"></div>
         <section class="nav_logo">
-            <img src="image\エックスラボロゴ.jpg" alt="Logo for Xlab">
+            <img src="image\Xlab.webp" alt="Logo for Xlab">
         </section>
         <section class="social">
             <a href="https://www.facebook.com/" target="_blank">
-            <img id="fb" src="image\facebook-logo-0.png" alt="FaceBook"></a>
+            <img id="fb" src="image\facebook.webp" alt="FaceBook"></a>
             <a href="https://www.instagram.com/" target="_blank">
-            <img id="ln" src="image\OIP.jpeg" alt="Instagram"></a>
+            <img id="ln" src="image\insta.webp" alt="Instagram"></a>
         </section>
         <nav>
             <ul class="navigation">
@@ -40,7 +41,11 @@
     <main>
         <section class="hero_img">
              <button id="hero_button">Join the Chamber!</button>
-             <img src="image\Osaka_01-scaled.jpg" alt="Osaka">
+             <picture>
+                <source srcset="image\Small.webp" media="(max-width: 37.5em)" >
+                <source srcset="image\wdd230-org-600x400.webp" media="(max-width: 60em)" >
+               <img src="image\wdd230-org-900x600.webp" alt="Large">
+             </picture>
         </section>
         <section class="call_to_action">
              <h2>call to action goes here</h2>
@@ -64,7 +69,7 @@
         </section>
         <section class="weather">
              <h2>Weather</h2>
-             <img src="image\whether.jpg" alt="Weather">
+             <img src="image\whether.webp" alt="Weather">
              <p>
                 Skies: Partly Cloudy
              </p>
@@ -84,20 +89,20 @@
         <section class="spotlight">
             <div id="spot1">
                  <h2>Nature Club</h2>
-                 <img src="image\nart.jpg" alt="nature">
+                 <img src="image\nature.webp" alt="nature">
             </div>
             <div id="spot2">
                  <h2>Web school</h2>
-                 <img src="image\school.jpg" alt="shcool">
+                 <img src="image\school.webp" alt="shcool">
             </div>
             <div id="spot3">
                  <h2>Japanese Culture</h2>
-                 <img src="image\sumo.jpeg" alt="Sumo">
+                 <img src="image\sumo.webp" alt="Sumo">
             </div>
         </section>
     </main>
     <footer>
-        <span><img src="image\エックスラボロゴ.jpg" alt="Small Logo"></span>
+        <span><img src="image\Xlab.webp" alt="Small Logo"></span>
         <span id="footer_line">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
         <section class="address">
             <h2>JOsaka, Japan</h2>

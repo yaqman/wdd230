@@ -3,7 +3,7 @@
 		display: flex;
 	}
 	.navigation li {
-		display: block; 
+		display: block; /* change state in small view */
 		flex: 1 1 auto;
 	}
 	.navigation a {
@@ -18,7 +18,7 @@
     }
 
     main {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 250px 1fr 250px;
     }
 
     main h3 {
@@ -30,11 +30,11 @@
     }
 
     .hero_img, .news {
-        grid-column: 2/4;
+        grid-column: 2/3;
     }
 
     .spotlight {
-        grid-column: 4/5;
+        grid-column: 3/4;
         grid-row: 1/4;
         display: grid;
         grid-template-columns: 1fr;
