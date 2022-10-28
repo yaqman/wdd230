@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style\medium.css">
     <link rel="stylesheet" href="style\large.css">
     <script src="script\windchill.js" defer></script>
+    <script src="script\nav.js" defer></script>
     <script src="script\data.js" defer></script>
 </head>
 
@@ -68,16 +69,19 @@
               </p>
         </section>
         <section class="weather">
-             <h2>Weather</h2>
-             <img src="image\whether.webp" alt="Weather">
-             <p>
-                Skies: Partly Cloudy
-             </p>
-             <p>
-                Wind Speed: 2.5 km/h
-             </p>
-             <p>
-                Wind Chill: N/A
+            <h2>Weather</h2>
+            <img src="image\whether.webp" alt="Weather">
+            <p>
+               Skies: Partly Cloudy
+            </p>
+            <p>
+                Temp: <span id="temp"></span> °F
+            </p>
+            <p>
+                Wind Speed: <span id="mph"></span> mph
+            </p>
+            <p>
+                Wind Chill: <span id="windchill"></span>
              </p>
         </section>
         <section class="join">
