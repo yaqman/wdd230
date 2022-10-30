@@ -294,4 +294,31 @@ footer h3 {
     border-radius: 25px;
     grid-column: span 3;
 }
-  
+
+button, a {
+    cursor: pointer;
+}
+
+main.discover {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sites h1, .sites article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sites article picture {
+    border: 2px solid #0C120C;
+    margin: 25px 0;
+    border-radius: 25px;
+}
+
+.sites ul {
+    display: grid;
+}

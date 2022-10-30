@@ -84,4 +84,23 @@
     #spot2 {
         grid-column: 2/3;
     }
+
+ .sites picture:hover {
+    border: 6px double #4169e1;
+    border-radius: 25px;
+    box-shadow: 0 0 30px 15px #0C120C;
+    }
+
+    .sites ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .sites li {
+    grid-column: 2/3;
+    font-size: 1.2rem;
+    }
+
+    .sites p {
+        font-size: 1.5rem;
+    }
 }
+

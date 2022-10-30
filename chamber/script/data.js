@@ -40,3 +40,33 @@ window.addEventListener("load", () => {
     meetingBanner.style.display = "block";
   }
 }, false);
+
+const visitsDisplay = document.querySelector("#visits");
+
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
+
+if (numVisits !== 0) {
+	visitsDisplay.textContent = `Number of Visits: ${numVisits}`;
+} else {
+	visitsDisplay.textContent = `This is your first visit!`;
+}
+
+numVisits++;
+
+localStorage.setItem("visits-ls", numVisits);
+
+const todayDate = new Date();
+let dayBefore = localStorage.getItem('daysSince-ls');
+
+localStorage.setItem('daysSince-ls', todayDate);
+
+dayBefore = Date.parse(dayBefore);
+
+const daysSinceVisit = (todayDate - dayBefore) / (1000 * 3600 * 24);
+
+if (!daysSinceVisit) {
+    document.querySelector("#days_since").textContent = `0 days since last visit`
+}
+else {
+    document.querySelector("#days_since").textContent = `${daysSinceVisit.toFixed(0)} days since last visit`;
+}
