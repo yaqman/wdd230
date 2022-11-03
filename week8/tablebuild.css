@@ -1,0 +1,53 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+}
+
+:root {
+	--back: rgb(4, 27, 235);
+    --back2: rgba(109, 121, 226, 0.644);
+    --foredark: rgb(0, 0, 0);
+	--forelight: rgb(255, 253, 253);
+	--border: rgb(98, 57, 12);
+	--borderlight: rgb(118, 2, 2);
+	--shadow: rgb(201, 194, 194);
+	--zebra: rgb(91, 177, 247);
+}
+
+table {
+	margin: 10px auto;
+	border: 8px double var(--border);
+	box-shadow: 0 0 30px var(--shadow);
+	border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: var(--back);
+	font-size: .85rem;
+}
+
+tr:first-child th, .high {
+	background-color: var(--back);
+	color: var(--forelight);
+}
+
+th, td {
+	padding: 8px 16px;
+	border: 3px solid var(--borderlight);
+}
+
+th {
+	background-color: var(--back2);
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--zebra);
+}
