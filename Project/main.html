@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="style.css">
+<script src="data.js" defer></script>
+<title>JavaScript Form Input Validation & Processing Form Data</title>
+</head>
+<body>
+    <div class="content">
+      <form name="myForm" class="validationForm" novalidate>
+        <div>
+          <label for="name">Name </label>
+          <input class="required maxlength" data-maxlength="10" type="text" name="name" id="name">
+        </div>
+        <div>
+          <label for="tel">Phone Number </label>
+          <input class="tel" type="tel" name="tel" id="tel">
+        </div>
+        <div>
+          <label for="email1">E-mail </label>
+          <input class="required email" type="email" id="email1" name="email1" size="30">
+        </div>
+        <div>
+          <label for="email2">E-mail (Confirm)</label>
+          <input class="required equal-to" data-equal-to="email1" type="email" id="email2" name="email2" size="30">
+        </div>
+        <div>
+          <label for="subject">Title</label>
+          <input type="text" class="required maxlength" data-maxlength="20" id="subject" name="subject">
+        </div>
+        <div>
+          <label for="inquiry">Contents</label>
+          <textarea class="required maxlength" data-maxlength="100" name="inquiry" id="inquiry" rows="5" cols="50"></textarea>
+        </div>
+        <button name="send">Send</button>
+      </form>
+    </div>
+    </body>
