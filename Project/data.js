@@ -93,7 +93,7 @@
           const equalToElem = document.getElementById(equalToId);
           if(elem.value !=='' && equalToElem.value !==''){
             if(equalToElem.value !== elem.value) {
-              createError(elem, '入力された値が異なります');
+              createError(elem, 'Value entered is different');
               e.preventDefault();
             }
           }
