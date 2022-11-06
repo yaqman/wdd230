@@ -79,12 +79,12 @@
           if(elem.value !=='') {
             //Stop submitting the form by displaying an error if the value is greater than maxlength
             if(elem.value.length > maxlength) {
-              createError(elem, maxlength + 'Please enter no more than 100 characters');
+              createError(elem, maxlength + ' characters ');
               e.preventDefault();
             }
           }
         });
-        
+         
         equalToElems.forEach( (elem) => {
           //Element of comparison
           const equalToId = elem.dataset.equalTo;
