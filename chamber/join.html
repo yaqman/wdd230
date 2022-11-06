@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="style\home.css">
     <link rel="stylesheet" href="style\medium.css">
     <link rel="stylesheet" href="style\large.css">
-    <script src="script\windchill.js" defer></script>
     <script src="script\nav.js" defer></script>
     <script src="script\data.js" defer></script>
-    <script src="script\lazyload.js" defer></script>
 </head>
 
 <body>
@@ -41,35 +39,65 @@
         </nav>
     </header>
     <main class="discover">
-        <section class="sites">
-            <h1>Discover XLab</h1>
-                <article>
-                    <p>Saito Shopping Center</p>
-                    <p>You can enjoy shopping here at many specialty stores.</p>
-                    <picture class="lazy">
-                        <img src="image\ショッピングセンター.webp" data-src="image\ショッピングセンター-800.webp" alt="Shopping">
-                    </picture>
-                    <p>XLab Park</p>
-                    <p>It is crowded with many families on weekends. You can also see cherry blossoms in spring.</p>
-                    <picture class="lazy">
-                        <img src="image\公園.webp" data-src="image\公園-800.webp" alt="Park">
-                    </picture>
-                    <p>KO Mountain</p>
-                    <p>It is a mountain where you can climb mountains. You can see beautiful scenery in winter.</p>
-                    <picture class="lazy">
-                        <img src="image\山.webp" data-src="image\山-800.webp" alt="Mountain">
-                    </picture>
-                    <p>Hikone Castle</p>
-                    <p>It is a very historic castle. There's also a tour.</p>
-                    <picture class="lazy">
-                        <img src="image\城.webp" data-src="image\城-800.webp" alt="Castle">
-                    </picture>
-                    <p>Yui Hospital</p>
-                    <p>This hospital is used by many citizens. It has a good reputation.</p>
-                    <picture class="lazy">
-                        <img src="image\病院.webp" data-src="image\病院-800.webp" alt="Hospital">
-                    </picture>
-            </article>
+        <div class="sites">
+            <h1>Join XLAB's Clab</h1>
+            <p>
+                If you join our club, your life will become even more active.
+            </p>
+            <p>
+                It is a special community club where an event is held once a month.
+            </p>
+        </div>
+        <section id="form">
+            <h2>Application Form</h2>
+
+            <form action="thankyou.html" method="Input">
+                <label class="Entry">First Name
+              <input type="text" placeholder="First name" name="name" required
+            /></label>
+                <label class="Entry">Last Name
+              <input type="text" placeholder="Last name" name="name" required
+            /></label>
+            <label class="Entry">Business Position Title
+                <input type="text" name="Position title"  pattern="^[A-Za-z -]{7,}$" minlength="7" required
+            /></label>
+            <label class="Entry">Email
+                <input type="email" name="email" placeholder="wdd230@byui.com"  required
+            /></label>
+            <label class="Entry">Phone Number 
+                <input type="tel" name="tel"placeholder="00011112222" required
+            /></label>
+            <label class="Entry">Business Name <input type="text" name="business name" required
+            /></label>
+            <label class="Entry">Business Description
+            <textarea name="description" rows="5" cols="100"></textarea>
+            </label>
+
+            <div id="membership">
+                <div class="title">Membership Option</div>
+
+                <div>
+                    <label class="Option">
+                        <input id="free" type="radio" name="membership" />
+                        [NP Membership] Free
+                    </label>
+                    <label class="Option">
+                        <input id="bronze" type="radio" name="membership" />
+                        [Bronze Membership] $20/yr
+                    </label>
+                    <label class="Option">
+                        <input id="silver" type="radio" name="membership" />
+                        [Silver Membership] $40/yr
+                    </label>
+                    <label class="Option">
+                        <input id="gold" type="radio" name="membership" />
+                        [Gold Membership] $60/yr
+                    </label>
+                </div>
+                <input type="hidden" id="time" name="time" />
+
+                <input id="submit" type="submit" value="Join Our XLab Club!" />
+            </form>
         </section>
     </main>
     <footer>

@@ -300,7 +300,7 @@ button, a {
 }
 
 main.discover {
-    max-width: 90%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -321,4 +321,109 @@ main.discover {
 
 .sites ul {
     display: grid;
+}
+
+#form {
+    margin: 0 auto 45px auto;
+    max-width: 800px;
+    background-color: whitesmoke;
+    padding: 10px 40px;
+    border-radius: 10px;
+    padding-bottom: 35px;
+    margin-left: 0.5px;
+}
+
+#form h2 {
+    font-size: 15px;
+}
+
+
+.Entry {
+    display: block;
+    padding-top: 30px;
+    color: #055a9b;
+    font-weight: 600;
+}
+
+.Entry input,
+textarea {
+    display: block;
+    margin-top: 5px;
+    color: #015da3;
+    width: 94%;
+    padding: 7px 3px;
+}
+
+.Entry textarea {
+    display: block;
+    margin-top: 5px;
+}
+
+.Entry input:focus {
+    background-color: rgb(228, 238, 241);
+    border: 0px;
+}
+
+.Entry input:required {
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+}
+
+.Entry input:required:valid {
+    border-right: 5px solid rgb(3, 82, 255);
+    border-left: 5px solid rgb(3, 82, 255);
+}
+
+.membership {
+    margin-top: 15px;
+    display: block;
+}
+
+#membership {
+    font-weight: 400;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.Option {
+    display: block;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+input[name="membership"]
+ {
+    margin-right: 15px;
+    accent-color: #06cf61;
+}
+
+#submit {
+    margin-top: 10px;
+    padding: 10px 0;
+    width: 96%;
+    border: none;
+    font-size: 15px;
+    background-color: #000000;
+    border-radius: 5px;
+    color: white;
+}
+
+.Option:first-child {
+    margin-top: 15px;
+}
+
+td {
+    font-size: 15px;
+}
+
+.thankyou {
+    margin: 50px auto 70px auto;
+    max-width: 800px;
+    background-color: rgb(13, 174, 223);
+    padding: 15px 35px;
+    border-radius: 10px;
+    padding-bottom: 40px;
 }
