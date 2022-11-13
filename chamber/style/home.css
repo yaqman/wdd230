@@ -427,3 +427,22 @@ td {
     border-radius: 10px;
     padding-bottom: 40px;
 }
+
+main.directory {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.directory section {
+    padding: 1rem;
+    margin: 0.3rem .3rem 1rem;
+    border-radius: 20px;
+    background-color: #bb07e4;
+    border: 5px solid black;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+  }
