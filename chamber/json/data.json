@@ -1,0 +1,94 @@
+{
+    "directory": [
+        {
+            "name": "Cyber Agend",
+            "address": "40-1, Udagawa, shibuya, Tokyo, Japan",
+            "zip": "150-0042",
+            "number": "03-5459-0202",
+            "URL": "https://www.cyberagent.co.jp/",
+            "logo": "",
+            "level": "Gold"
+        },
+
+        {
+            "name": "SoftBank",
+            "address": "7-1-1, Minato, Tokyo, Japan",
+            "zip": "05-7529",
+            "number": "03-6889-2000",
+            "URL": "https://www.softbank.jp/",
+            "logo": "",
+            "level": "Gold"
+        },
+
+        {
+            "name": "KDDI",
+            "address": "2-3-2, Sinjuku, Tokyo, Japan",
+            "zip": "03-1293",
+            "number": "03-3347-0077",
+            "URL": "https://www.au.com/",
+            "logo": "",
+            "level": "Silver"
+        },
+
+        {
+            "name": "Tomorrow Gate",
+            "address": "1-6-32, Shinsaibashi, Osaka, Japan",
+            "zip": "542-0086",
+            "number": "06-7167-3950",
+            "URL": "https://tomorrowgate.co.jp/",
+            "logo": "",
+            "level": "Silver"
+        },
+
+        {
+            "name": "HONDA",
+            "address": "2-1-1, Aoyama, Minato, Tokyo, Japan",
+            "zip": "107-8556",
+            "number": "03-3423-1111",
+            "URL": "https://www.honda.co.jp/",
+            "logo": "",
+            "level": "Gold"
+        },
+
+        {
+            "name": "Dentsu",
+            "address": "1-8-1, Shinbashi, Minato, Tokyo, Japan",
+            "zip": "105-7050",
+            "number": "03-6217-6600",
+            "URL": "https://www.dentsu.co.jp/",
+            "logo": "",
+            "level": "Silver"
+        },
+
+        {
+            "name": "Marukame",
+            "address": "1-21-1, Dogenzaka, Shibuya, Tokyo, Japan",
+            "zip": "150-0043",
+            "number": "03-4221-8900",
+            "URL": "https://www.toridoll.com/",
+            "logo": "",
+            "level": "bronze"
+        },
+
+        {
+            "name": "Corecara",
+            "address": "129, Moriyama, Shiga, Japan",
+            "zip": "524-0032",
+            "number": "06-6492-5058",
+            "URL": "https://www.corecara.co.jp/",
+            "logo": "",
+            "level": "Free"
+        },
+
+        {
+            "name": "Ashisuto",
+            "address": "10-2, Shibuya, Tokyo, Japan",
+            "zip": "231-0221",
+            "number": "08-832-4831",
+            "URL": "https://www.ashisuto.co.jp/corporate/information/outline/",
+            "logo": "",
+            "level": "Free"
+        }
+
+    ]
+}
