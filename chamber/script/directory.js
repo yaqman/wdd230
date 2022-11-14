@@ -30,14 +30,12 @@ function display(Business){
     site.innerHTML = Business.URL;
     site.setAttribute("href", Business.URL);
 
-
+    cards.appendChild(card);
     card.appendChild(h3);
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(site);
     card.appendChild(logo);
-
-    cards.appendChild(card);
 }
 
 getInfo();
