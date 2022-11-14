@@ -6,11 +6,11 @@ fetch(requestURL)
         return response.json();
       })
       .then(function (jsonObject) {
-        const members = jsonObject['directory'];
-        members.forEach(displayMembers);
+        const Business = jsonObject['directory'];
+        Business.forEach(display);
     });
 
-function displayMembers(member){
+function display(Business){
     let card = document.createElement("section");
     let h3 = document.createElement("h3");
     let address = document.createElement("p");
@@ -18,17 +18,17 @@ function displayMembers(member){
     let logo = document.createElement("img");
     let site = document.createElement("a");
 
-    h3.textContent = `The Business: ${member.name}`;
-    address.textContent = `The Address: ${member.address}`;
-    phone.textContent = `The Phone Number: ${member.number}`
+    h3.textContent = `The Business: ${Business.name}`;
+    address.textContent = `The Address: ${Business.address}`;
+    phone.textContent = `The Phone Number: ${Business.number}`
 
-    logo.setAttribute("src", member.logo);
-    logo.setAttribute("alt",`${member.name} logo`);
+    logo.setAttribute("src", Business.logo);
+    logo.setAttribute("alt",`${Business.name} logo`);
     logo.width = 200;
     logo.height = 200;
 
-    site.innerHTML = member.URL;
-    site.setAttribute("href", member.URL);
+    site.innerHTML = Business.URL;
+    site.setAttribute("href", Business.URL);
 
 
     card.appendChild(h3);
