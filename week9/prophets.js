@@ -1,4 +1,5 @@
 const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const cards = document.querySelector(".cards");
 
 fetch(requestURL)
   .then(function (response) {
@@ -16,7 +17,6 @@ function displayProphets(prophet) {
     let h2 = document.createElement('h2');
     let portrait = document.createElement('img');
     let birthDate = document.createElement('p');
-    let birthPlace = document.createElement('p');
 
     // Change the textContent property of the h2 element to contain the prophet's full name
     h2.textContent = `${prophet.name} ${prophet.lastname}`;
@@ -26,13 +26,12 @@ function displayProphets(prophet) {
     portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname} - ${prophet.order}th Latter-day President`);
     portrait.setAttribute('loading', 'lazy');
 
-    birthDate.textContent = `Date of birth: ${prophet.birthdate}`
-    birthPlace.textContent = `Place of birth: ${prophet.birthplace}`
+    birthDate.textContent = `Date of birth :${prophet.birthdate}`;
 
     // Add/append the section(card) with the h2 element
-    card.append(h2, birthDate, birthPlace, portrait);
-
-    console.log(card)
+    card.appendChild(h2);
+    card.appendChild(portrait);
+    card.appendChild(birthDate);
 
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('.cards').appendChild(card);
