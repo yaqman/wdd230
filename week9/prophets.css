@@ -23,6 +23,9 @@ body {
    display: grid;
    gap: 2rem;
    margin-bottom: 10px;
+   grid-template-columns: 1fr;
+   grid-gap: 3px;
+   padding: 15px;
 }
 
   section {
@@ -49,10 +52,27 @@ body {
     border: 1px solid;
     border-radius: 10px;
   }
+
+  @media screen and (max-width: 900px) {
+    .cards {
+        max-width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;  
+    }
+  }
+
+    @media only screen and (min-width: 100px) {
+
+      .cards{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+}
   
   footer {
     background-color:  #970de1;
-    border-top: 1px solid ;
-    padding: 30px;
+    margin: 10px;
     text-align: center;
   }
