@@ -1,19 +1,18 @@
 const requestURL ="https://raw.githubusercontent.com/yaqman/wdd230.github.io/main/chamber/json/data.json";
 const cards = document.querySelector(".grd");
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
+const grid = document.querySelector("#grid");
+const list = document.querySelector("#list");
 
-gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
+grid.addEventListener("click", () => {
+  cards.classList.add(".cards");
+  cards.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+list.addEventListener("click", showList); // example using defined function
 
 function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+	cards.classList.add("list");
+	caeds.classList.remove("grid");
 }
 
 fetch(requestURL)
