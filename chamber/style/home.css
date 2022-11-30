@@ -577,3 +577,10 @@ pre.prettyprint ol {
 	padding: 1em 0 1em 2.4em;
 }
 
+.inf {
+    margin: auto;
+	padding: 0.5rem;
+	background-color: #bbb;
+	text-align: center;
+    grid-row: 5/8;
+}
