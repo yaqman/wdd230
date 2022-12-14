@@ -8,61 +8,150 @@
     <title>WDD230 | BYU-I</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:ital,wght@1,600&family=Source+Serif+4:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
-    <script src="" defer></script>
-    <script src="" defer></script>
-    <script src="" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&family=Roboto+Serif:ital,wght@1,600&family=Source+Serif+4:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style\normalize.css">
+    <link rel="stylesheet" href="style\base.css">
+    <link rel="stylesheet" href="style\medium.css">
+    <link rel="stylesheet" href="style\large.css">
+    <script src="script\forecast.js" defer></script>
+    <script src="script\data.js" defer></script>
+    <script src="script\nav.js" defer></script>
+    <script src="script\fresh.js" defer></script>
 </head>
 
 <body>
     <header>
         <div id="currentDate"></div>
         <section class="nav_logo">
-            <img src="image\Bountiful Foods.png" alt="Logo">
+            <img src="image\Bountiful Foods.png" alt="Logo" loading="lazy">
+            <div class="sitename">
+                <p>Bountiful Foods</p>
+            </div>
         </section>
-        <section class="social">
-            <a href="https://www.facebook.com/" target="_blank">
-            <img id="fb" src="image\facebook-logo-0.png" alt="FaceBook"></a>
-            <a href="https://www.instagram.com/" target="_blank">
-            <img id="ln" src="image\OIP.jpeg" alt="Instagram"></a>
-            <a href="https://twitter.com/" target="_blank">
-            <img id="Tw" src="image\Twitter.png" alt="Twitter"></a>
-        </section>
-        <nav>
-            <ul class="navigation">
-                <li><a class="Final" href="#">Menu</a></li>
-                <li><a href="main.html">Home</a></li>
-                <li><a href="">Fresh</a></li>
-                <li><a href="">About Us</a></li>
-            </ul>
-        </nav>
+        <div class="nav_box">
+            <nav>
+                <ul class="navigation">
+                    <li><a class="final" href="#">Menu</a></li>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <section class="social">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img id="fb" src="image\facebook-logo-0.png" alt="FaceBook" loading="lazy">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img id="ln" src="image\OIP.jpeg" alt="Instagram" loading="lazy">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img id="Tw" src="image\Twitter.png" alt="Twitter" loading="lazy">
+                </a>
+            </section>
+        </div>
     </header>
+
     <main>
         <div class="main_image">
             <img src="image\beach.jpg" alt="our beach">
+            <div class="main_lead">
+                <p>
+                    You can see the beautiful sunset famous in the world on this beach.
+                </p>
+                <p>
+                    The waves are calm and children can play with peace of mind.
+                </p>
+                <p>
+                    We are open every Monday and Wednesday. I hope you enjoy the beautiful scenery.
+                </p>
+            </div>
         </div>
-        <div class="information">
-            <p>
-                You can see the beautiful sunset famous in the world on this beach.
-                The waves are calm and children can play with peace of mind.
-                We are open every Monday and Wednesday. I hope you enjoy the beautiful scenery.
-            </p>
+        <div class="drink">
+            <div class="drink_img">
+                <img src="image\drink.jpeg" alt="our drink">
+            </div>
+            <div class="offer">
+                <p>we offer fresh and healthy smoothies!</p>
+                <p>
+                    You can order online.<br> Order here⇒
+                    <span id="link">
+                        <a href="fresh.html">Fresh Drink</a>
+                    </span> 
+                </p>
+            </div>
+            <div class="drinkcard">
+                <p>
+                    Your Total Number of <br>smoothies are
+                </p>
+            </div>
         </div>
-
-        
+        <div class="weather">
+                <div id="today">
+                    <h2>Current Weather</h2>
+                    <figure>
+                        <img src="#" alt="" id="weather-icon" loading="lazy"/>
+                        <figcaption></figcaption>
+                    </figure>
+                    <p>
+                        Temperature: <span id="current-temp"></span> &deg;F
+                    </p>
+                    <p>
+                        Wind Speed:  <span id="current-mph"></span> mph
+                    </p>
+                    <p>
+                        Humidity: <span id="current-humidity"></span> %
+                     </p>
+                </div>
+        <div class="three_forecast">
+            <h3>Weather Forecast</h3>
+            <div class="forecastBox">
+                <div class="forecast" id="tomorrow">
+                    <h4>Tomorrow</h4>
+                        <figure>
+                            <img src="#" alt="" id="tomorrowweather-icon" loading="lazy"/>
+                            <span id="tomorrow_figcaption"></span>
+                        </figure>
+                        <p>
+                        Temperature: <span id="tomorrow-temp"></span> &deg;F
+                        </p>
+                    </div>
+                    <div class="forecast" id="twodays">
+                        <h4>Tow Days</h4>
+                        <figure>
+                            <img src="#" alt="" id="twodaysweather-icon" loading="lazy"/>
+                            <span id="twodays_figcaption"></span>
+                        </figure>
+                        <p>
+                            Temperature: <span id="twodays-temp"></span> &deg;F
+                        </p>
+                    </div>
+                    <div class="forecast" id="threedays">
+                        <h4>Three Days</h4>
+                        <figure>
+                            <img src="#" alt="" id="threedaysweather-icon" loading="lazy"/>
+                            <span id="threedays_figcaption"></span>
+                        </figure>
+                        <p>
+                            Temperature: <span id="threedays-temp"></span> &deg;F
+                        </p>
+                    </div> 
+                    </div> 
+                </div>
+            </div>  
     </main>
     <footer>
-        <span><img src="" alt=""></span>
-        <section class="address">
-            <h2></h2>
-            <h3></h3>
-            <h3>location 📍</h3>
-            <h3></h3>
+        <span><img src="image\Bountiful Foods.png" alt="Logo" loading="lazy"></span>
+        <section class="contactinf">
+            <h3>200-000-9999</h3>
+            <a href="inf.bountful@bount.com">inf.bountful@bount.com</a>
         </section>
+        <section class="address">
+            <h2>CA 94929</h2>
+            <h3>1 Beach Ave Dillon Beach</h3>
+            <h3>location📍</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6266.550903668474!2d-122.96907110737737!3d38.24991710369744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1670905421160!5m2!1sja!2sjp" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <span id="timestamp"></span>
     </footer>
 </body>
 </html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="the WDD230 course at BYU-I">
+    <title>WDD230 | BYU-I</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&family=Roboto+Serif:ital,wght@1,600&family=Source+Serif+4:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style\normalize.css">
+    <link rel="stylesheet" href="style\base.css">
+    <link rel="stylesheet" href="style\medium.css">
+    <link rel="stylesheet" href="style\large.css">
+    <script src="script\forecast.js" defer></script>
+    <script src="script\data.js" defer></script>
+    <script src="script\fresh.js" defer></script>
+    <script src="script\nav.js" defer></script>
+    <script src="script\fresh.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="currentDate"></div>
+        <section class="nav_logo">
+            <img src="image\Bountiful Foods.png" alt="Logo" loading="lazy">
+            <div class="sitename">
+                <p>Bountiful Foods</p>
+            </div>
+        </section>
+        <div class="nav_box">
+            <nav>
+                <ul class="navigation">
+                    <li><a class="final" href="#">Menu</a></li>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <section class="social">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img id="fb" src="image\facebook-logo-0.png" alt="FaceBook" loading="lazy">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img id="ln" src="image\OIP.jpeg" alt="Instagram" loading="lazy">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img id="Tw" src="image\Twitter.png" alt="Twitter" loading="lazy">
+                </a>
+            </section>
+        </div>
+    </header>
+
+    <main class=fresh>
+        <div class="intro">
+            <h1>Our Fresh Smoothies</h1>
+            <p>
+                We offer you the freshest drinks.
+            </p>
+            <p>
+                Please enter your information here, we will move as soon as we receive your order.
+            </p>
+        </div>
+        <div class="Form">
+            <div class="Form_top">
+                <div>
+                    <label for="name">Name </label>
+                    <input class="required maxlength" data-maxlength="10" type="text" name="name" id="name">
+                </div>
+                <div>
+                    <label for="tel">Phone Number </label>
+                    <input class="tel" type="tel" name="tel" id="tel">
+                </div>
+                <div>
+                    <label for="email1">E-mail </label>
+                    <input class="required email" type="email" id="email1" name="email1" size="30">
+                </div>
+                <div>
+                    <label for="email2">E-mail (Confirm)</label>
+                    <input class="required equal-to" data-equal-to="email1" type="email" id="email2" name="email2" size="30">
+                </div>
+                                
+            </div>
+            <form name="fruits" class="fruits">
+                <fieldset>
+                    <legend>Create Your Favorite</legend>
+                    <label class="order order-fav">
+                        <span>1st Favorite</span>
+                        <select name="fruits1" id="one"></select>
+                    </label>
+                    <label class="order order-fav">
+                        <span>2nd Favorite</span>
+                        <select name="fruits2" id="two"></select>
+                    </label>
+                    <label class="order order-fav">
+                        <span>3rd Favorite</span>
+                        <select name="fruits3" id="three"></select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Others</legend>
+                    <label class="order order-others">
+                        <span>Anything else?</span>
+                        <textarea name="description" id="other" rows="4" placeholder="If you have Anything, please let us know!"></textarea>
+                    </label>
+                </fieldset>
+                <button type="button" id="submitBtn">Create Your Drink!</button>
+            </form>
+        </div>
+        <div class="output">
+            <p id="back"></p>
+        </div>
+    </main>
+
+    <footer>
+        <span><img src="image\Bountiful Foods.png" alt="Logo" loading="lazy"></span>
+        <section class="contactinf">
+            <h3>200-000-9999</h3>
+            <a href="inf.bountful@bount.com">inf.bountful@bount.com</a>
+        </section>
+        <section class="address">
+            <h2>CA 94929</h2>
+            <h3>1 Beach Ave Dillon Beach</h3>
+            <h3>location📍</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6266.550903668474!2d-122.96907110737737!3d38.24991710369744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1670905421160!5m2!1sja!2sjp" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <span id="timestamp"></span>
+    </footer>
+</body>

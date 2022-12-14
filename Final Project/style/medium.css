@@ -1,0 +1,204 @@
+@media only screen and (max-width: 60em) {
+	nav {
+		max-width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.nav_box {
+		display: block;
+		padding-right: 20px;
+		padding-left: 20px;
+		padding-bottom: 20px;
+	}
+	.social {
+		justify-content: flex-end;
+	}
+
+    main h3 {
+        font-size: 1rem;
+    }
+
+
+	.main_lead {
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+	.main_lead p {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+
+	.drink .offer #link {
+		display: inline-block;
+		background-color: #ffd500;
+		padding: 5px 10px;
+		border-radius: 25px;
+		transition: opacity .3s ease;
+	}
+	.drink .offer #link:hover {
+		opacity: .7;
+	}
+	.drink .offer #link a {
+		display: inline-block;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.weather {
+		padding: 20px;
+		text-align: center;
+    }
+	.weather #today {
+		max-width: 350px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 30px;
+	}
+	.weather .forecastBox {
+		display: block;
+	}
+	.weather .forecast {
+		width: auto;
+	}
+	.weather .three_forecast {
+		padding: 20px 0;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+    .forecast span {
+        font-size: 1.2rem;
+    }
+
+	
+	/* about */
+
+	.history {
+		display: block;
+		padding: 50px 25px;
+	}
+	.history_img {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.history_img img {
+		width: 100%;
+		object-fit: cover;
+		max-height: 500px;
+	}
+	.history_text {
+		width: 100%;
+	}
+	.history_text p {
+		font-size: 1.2rem;
+		margin-bottom: 20px;
+	}
+
+
+
+	.areaBox {
+		display: block;
+		padding: 0 25px 50px;
+	}
+
+	.contact_info {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+		border: 3px solid #ffd500;
+		border-radius: 25px;
+		padding: 20px;
+		box-sizing: border-box;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.contact_info .contact_center {
+		text-align: center;
+	}
+	.contact_info p {
+		font-size: 1.2rem;
+	}
+
+	.googlemap {
+		width: 100%;
+
+	}
+	.googlemap iframe {
+		width: 100%;
+		height: 350px;
+		max-width: 100%;
+	}
+
+
+	/* fresh */
+	.fresh {
+		padding: 50px 25px;
+	}
+	.fresh .intro {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.fresh .Form {
+		border: 3px solid #ffd500;
+		border-radius: 25px;
+		padding: 50px 25px;
+		box-sizing: border-box;
+	}
+	.fresh .Form_top {
+		margin-bottom: 30px;
+	}
+	.fresh .Form_top div {
+		display: flex;
+		margin-bottom: 20px;
+	}
+	.fresh .Form_top label {
+		display: block;
+		width: 100%;
+		max-width: 180px;
+		margin-right: 10px;
+	}
+	.fresh .Form_top input {
+		display: block;
+		width: 100%;
+		max-width: 250px;
+	}
+	.fresh .fruits fieldset {
+		padding: 20px;
+		margin-bottom: 30px;
+	}
+	.fresh .fruits fieldset legend {
+		text-align: center;
+	}
+	.fresh .fruits fieldset .order-fav {
+		display: block;
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+	.fresh .fruits fieldset .order-others {
+		display: block;
+		text-align: center;
+	}
+	.fresh .fruits fieldset .order-others span {
+		display: block;
+		margin-bottom: 30px;
+		margin-right: 25px;
+	}
+	.fresh .fruits fieldset .order-others textarea {
+		width: 95%;
+		max-width: 100%;
+		height: 150px;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	.fresh .fruits button {
+		display: block;
+		width: 200px;
+		max-width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 10px;
+		border-radius: 20px;
+	}
+
+}

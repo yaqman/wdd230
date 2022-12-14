@@ -1,0 +1,213 @@
+@media only screen and (min-width: 60em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; 
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+    nav {
+        grid-column: 1/2;
+    }
+
+	.main_image img{
+		height: 300px;
+		min-height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+	
+	.main_lead {
+		margin-top: 45px;
+		margin-bottom: 45px;
+	}
+	.main_lead p {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	.drink{
+		font-size: 1.0rem;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin: 0 auto; 
+		padding: 20px;
+		text-align: center;
+	}
+	
+	.drink .drink_img {
+		width: 45%;
+	}
+
+	.drink .offer {
+		width: 20%;
+	}
+
+	.drink .offer #link {
+		display: inline-block;
+		background-color: #ffd500;
+		padding: 5px 10px;
+		border-radius: 25px;
+		transition: opacity .3s ease;
+	}
+	.drink .offer #link:hover {
+		opacity: .7;
+	}
+	.drink .offer #link a {
+		display: inline-block;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.drink .drinkcard{
+		width: 20%;
+	}
+
+
+
+    .weather {
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+    }
+	.weather #today {
+		width: 25%;
+		text-align: center;
+	}
+	.weather .three_forecast {
+		width: 65%;
+	}
+
+    .forecast span {
+        font-size: 1.2rem;
+    }
+
+
+
+	/* about */
+
+	.history {
+		display: flex;
+		justify-content: space-between;
+		padding: 50px;
+	}
+	.history_img {
+		width: 60%;
+	}
+	.history_img img {
+		width: 100%;
+		object-fit: cover;
+		max-height: 500px;
+	}
+	.history_text {
+		width: 33%;
+	}
+	.history_text p {
+		font-size: 1.4rem;
+		margin-bottom: 20px;
+	}
+
+	.areaBox {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 50px 50px;
+	}
+
+	.contact_info {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 48%;
+		border: 3px solid #ffd500;
+		border-radius: 25px;
+		padding: 20px;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	.contact_info .contact_center {
+		text-align: center;
+	}
+	.contact_info p {
+		font-size: 1.4rem;
+	}
+
+	.googlemap {
+		width: 48%;
+
+	}
+	.googlemap iframe {
+		width: 100%;
+		max-width: 100%;
+	}
+
+
+
+
+
+	/* fresh */
+	.fresh {
+		padding: 50px;
+	}
+	.fresh .intro {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.fresh .Form {
+		border: 3px solid #ffd500;
+		border-radius: 25px;
+		padding: 50px;
+		box-sizing: border-box;
+	}
+	.fresh .Form_top {
+		margin-bottom: 30px;
+	}
+	.fresh .Form_top div {
+		display: flex;
+		margin-bottom: 20px;
+	}
+	.fresh .Form_top label {
+		display: block;
+		width: 180px;
+	}
+	.fresh .Form_top input {
+		display: block;
+		width: 250px;
+	}
+	.fresh .fruits fieldset {
+		padding: 20px;
+		margin-bottom: 30px;
+	}
+	.fresh .fruits fieldset .order-fav {
+		margin-right: 20px;
+	}
+	.fresh .fruits fieldset .order-others {
+		display: flex;
+		align-items: center;
+	}
+	.fresh .fruits fieldset .order-others span {
+		display: block;
+		margin-right: 25px;
+	}
+	.fresh .fruits fieldset .order-others textarea {
+		width: 70%;
+		height: 150px;
+		padding: 10px;
+	}
+	.fresh .fruits button {
+		display: block;
+		width: 200px;
+		max-width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 10px;
+		border-radius: 20px;
+	}
+}
