@@ -5,15 +5,15 @@ var convert_fluit_list = {};
 function getJSON() {
 	return new Promise(
 	resolve => {
-		var req = new XMLHttpRequest();		  // XMLHttpRequest オブジェクトを生成する
-		req.onreadystatechange = function () {		  // XMLHttpRequest オブジェクトの状態が変化した際に呼び出されるイベントハンドラ
-				if (req.readyState == 4 && req.status == 200) { // サーバーからのレスポンスが完了し、かつ、通信が正常に終了した場合
-					fluit_list = JSON.parse(req.responseText);		          // 取得した JSON ファイルの中身を表示
+		var req = new XMLHttpRequest();		  
+		req.onreadystatechange = function () {		  
+				if (req.readyState == 4 && req.status == 200) { 
+					fluit_list = JSON.parse(req.responseText);		          
 					resolve(fluit_list);
 				}
 			};
-			req.open("GET", requestURL, false); // HTTPメソッドとアクセスするサーバーの　URL　を指定
-			req.send(null);					    // 実際にサーバーへリクエストを送信
+			req.open("GET", requestURL, false); 
+			req.send(null);					    
 			
 		}
 	);
@@ -41,7 +41,7 @@ async function initialise(){
 		fluit_list.forEach(
 			function (ele,i) {
 				
-				// セレクト作成
+	
 				const option1 = document.createElement('option');
 				const option2 = document.createElement('option');
 				const option3 = document.createElement('option');
@@ -124,17 +124,23 @@ document.querySelector('#submitBtn').addEventListener('click', function (event) 
 		});
 		
 		if (fluits){
-			var total_carbs = new Decimal(0.0);
-			var total_protein = new Decimal(0.0);
-			var total_fat = new Decimal(0.0);
-			var total_sugar = new Decimal(0.0);
+			var total_carbs = 0.0
+			var total_protein = 0.0
+			var total_fat = 0.0
+			var total_sugar = 0.0
 			fluits.forEach(function (ele,i) {
-				total_carbs = total_carbs.plus(ele.nutritions.carbohydrates);
-				total_protein = total_protein.plus(ele.nutritions.protein);
-				total_fat = total_fat.plus(ele.nutritions.fat);
-				total_sugar = total_sugar.plus(ele.nutritions.sugar);
+				total_carbs += ele.nutritions.carbohydrates;
+				total_protein += ele.nutritions.protein;
+				total_fat += ele.nutritions.fat;
+				total_sugar += ele.nutritions.sugar;
 				
 			});
+			
+			total_carbs = Math.round(total_carbs);
+			total_protein = Math.round(total_protein);
+			total_fat = Math.round(total_fat);
+			total_sugar = Math.round(total_sugar);
+			
 			
 			const total_carbs_tr = document.createElement('tr');
 			const total_carbs_th = document.createElement('th');
@@ -183,5 +189,9 @@ document.querySelector('#submitBtn').addEventListener('click', function (event) 
 	table.appendChild(tbody);
 	card.appendChild(table);
 	document.querySelector('.Form').appendChild(card);
+
+  let Counter = Number(window.localStorage.getItem("create"));
+  Counter++;
+  localStorage.setItem("create", Counter);
 	
 });
